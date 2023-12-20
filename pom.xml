@@ -4,7 +4,7 @@
     <groupId>com.visualpathit</groupId>
     <artifactId>sample-java-app</artifactId>
     <packaging>war</packaging>
-    <version>v2</version>
+    <version>v1</version>
     <name>Sample Java Webapp</name>
     <url>http://maven.apache.org</url>
     <properties>
