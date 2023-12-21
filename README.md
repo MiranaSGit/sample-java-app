@@ -27,3 +27,5 @@ $ docker run --name pg1 -p 5432:5432 -e POSTGRES_USER=mkyong -e POSTGRES_PASSWOR
 $ ./mvnw spring-boot:run
 
 ```
+
+Test from main branch
