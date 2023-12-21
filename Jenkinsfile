@@ -1,4 +1,3 @@
-TEST.... This is main branch version....
 pipeline {
   agent {
     kubernetes {
