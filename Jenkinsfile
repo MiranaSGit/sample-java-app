@@ -18,7 +18,7 @@ pipeline {
         stage('BUILD'){
             steps {
              container('maven') {
-                sh 'mvn clean install -DskipTests'
+                sh './mvnw clean package -Dmaven.test.skip=true'
              }    
             }
             post {
