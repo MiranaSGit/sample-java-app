@@ -1,29 +1,25 @@
-# Spring Boot + Spring data JPA + PostgreSQL example
+####
+### Prerequisites
+- JDK 1.8 or later
+- Maven 3 or later
+- MySQL 5.6 or later
 
-Article link : https://mkyong.com/spring-boot/spring-boot/spring-boot-spring-data-jpa-postgresql/
+### Technologies 
+- Spring MVC
+- Spring Security
+- Spring Data JPA
+- Maven
+- JSP
+- MySQL
+### Database
+Here,we used Mysql DB 
+MSQL DB Installation Steps for Linux ubuntu 14.04:
+- $ sudo apt-get update
+- $ sudo apt-get install mysql-server
 
-## Technologies used:
-Technologies used:
-* Spring Boot 3.1.2
-* Spring Data JPA (Hibernate 6  is the default JPA implementation)
-* PostgreSQL 15
-* Maven
-* Java 17
-* JUnit 5
-* Docker
-* [REST Assured](https://rest-assured.io/) and [Testcontainers](https://testcontainers.com/) (for Spring integration tests using a container)
+Then look for the file :
+- /src/main/resources/accountsdb
+- accountsdb.sql file is a mysql dump file.we have to import this dump to mysql db server
+- > mysql -u <user_name> -p accounts < accountsdb.sql
 
-## How to run it
-```
 
-$ git clone [https://github.com/mkyong/spring-boot.git](https://github.com/mkyong/spring-boot.git)
-
-$ cd spring-data-jpa-postgresql
-
-$ ./mvnw clean package -Dmaven.test.skip=true
-
-$ docker run --name pg1 -p 5432:5432 -e POSTGRES_USER=mkyong -e POSTGRES_PASSWORD=password -e POSTGRES_DB=mydb -d postgres:15-alpine
-
-$ ./mvnw spring-boot:run
-
-```
